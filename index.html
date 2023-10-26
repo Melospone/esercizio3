@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <link href="assets/css/resetReal.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio3</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="contenitore">
+      <header>
+        <div id="header_">
+          <img id="logo" src="assets/img/logo.svg" alt="logo" />
+          <p id="titolo">EPICODE-IL BLOG DEI DEVELOPER</p>
+          <ul id="listaStellina">
+            <li><a href="javascript:void(0)">HOME</a></li>
+            <li><a href="javascript:void(0)">ARTICOLI</a></li>
+            <li><a href="javascript:void(0)">JOB</a></li>
+          </ul>
+        </div>
+      </header>
+      <div>
+        <main>
+          <div id="main_">
+            <h2>Come creare un template per i post</h2>
+            <section>
+              <p>
+                <i class="fa-solid fa-pen"></i> di Mario Rossi -
+                <i class="fa-solid fa-clock"></i> pubblicato il 25-10-2020
+              </p>
+              <p>....</p>
+              <p>....</p>
+              <div id="liste">
+                Le varie aree saranno quindi suddivise in:
+                <ul>
+                  <li>
+                    Contenuti di intestazione del tag
+                    <span>&lt;header&gt;</span>
+                  </li>
+                  <li>
+                    Contenuti centrali variabili del tag
+                    <span>&lt;main&gt;</span>(corpo principale)
+                  </li>
+                  <li>
+                    Contenuti di fine pagina comuni, da inserire nel tag
+                    <span>&lt;footer&gt;</span>
+                  </li>
+                </ul>
+              </div>
+              <div id="tabelle">
+                <p>
+                  Formattazione del codice <br />
+                  Il testo dell'articolo dovra essere formattato per
+                  identificare
+                </p>
+                <ol>
+                  <li>
+                    Progettare su carta il markup finale, assegnando ad ogni
+                    specifico il tag appropriato
+                  </li>
+                  <li>
+                    Scrivere l'HTML dai tag esterni a quelli interni e dall'alto
+                    verso il basso
+                  </li>
+                  <li>Apllicare gli stili CSS</li>
+                </ol>
+                <p>
+                  L'applicazione di stili CSS è cresciuta negli anni fino a
+                  raggiungere la diffusione pressochè totale.
+                </p>
+
+                <!--TABELLA-->
+
+                <table cellpadding="10px" id="tabella">
+                  <caption>
+                    <strong>Diffusione dei CSS</strong>
+                  </caption>
+                  <thead id="int">
+                    <tr>
+                      <th>Anno</th>
+                      <th>% di utilizzo</th>
+                      <th>Supporto browsers</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>2000</td>
+                    <td>20%</td>
+                    <td>17%</td>
+                  </tr>
+                  <tr class="pariCol">
+                    <td>2002</td>
+                    <td>35%</td>
+                    <td>22%</td>
+                  </tr>
+                  <tr>
+                    <td>2004</td>
+                    <td>45%</td>
+                    <td>42%</td>
+                  </tr>
+                  <tr class="pariCol">
+                    <td>2008</td>
+                    <td>80%</td>
+                    <td>51%</td>
+                  </tr>
+                  <tr>
+                    <td>2012</td>
+                    <td>100%</td>
+                    <td>76%</td>
+                  </tr>
+                </table>
+
+                <p>
+                  Un test di validazione potrà essere fatto tramite il
+                  <a href="..." id="tool">tool online</a> dedicata allo scopo.Una volta
+                  ottimizzato il tutto, avremmo raggiunto <br />
+                  il nostro obiettivo ad essere stati dei veri developers come
+                  loro:
+                </p>
+                <!--VIDEO-->
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/dvOvHXruEDM?si=LrG61tL7uKWdNWCE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <!--FORM-->
+                <div id="form">
+                  <h3>NOVITÀ</h3>
+                  <p>
+                    Vuoi rimanere aggiornato su altre novità del blog?isciviti
+                    alla nostra newletter:
+                  </p>
+                  
+                  <form >
+                    
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" required placeholder="inserisci l'email" />
+                    
+                    <input type="submit" id="submit" value="Iscriviti"/>
+                  </form>
+                
+                </div>
+<h3>ARTICOLI CORRELATI</h3>
+
+<div class="articoli">
+<a href="javascript:void(0)">Validare il codice HTML</a>
+<p>Categoria: develop</p>
+<p class="diLato"><i class="fa-solid fa-calendar-days"></i> Data: 18-9-2020</p>
+
+</div>
+<div class="articoli"> 
+  <a href="javascript:void(0)">Validare il codice HTML</a>
+  <p>Categoria: develop</p>
+  <p class="diLato"><i class="fa-solid fa-calendar-days"></i> Data: 16-9-2020</p>
+
+</div>
+<div class="articoli">
+  <a href="javascript:void(0)">Validare il codice HTML</a>
+  <p>Categoria: develop</p>
+  <p class="diLato"><i class="fa-solid fa-calendar-days"></i> Data: 30-9-2020</p>
+
+</div>
+<p></p>
+<!--FOOTER-->
+
+<div id="footer">
+  <p>Blog Epicode 2021</p>
+  <p>Testato online Mario Rossi <u>info@epicode.school</u> </p>
+
+</div>
+
+
+
+
+              </div>
+            </section>
+          </div>
+          <aside></aside>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
